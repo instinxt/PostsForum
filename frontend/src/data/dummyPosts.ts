@@ -1,16 +1,4 @@
-export interface Post {
-	timestamp: string;
-	title: string;
-	message: string;
-	context: string;
-	tags: string[];
-	location: string;
-	images?: string[];
-	externalLinks: string[];
-	numLikes: number;
-	numBookmarks: number;
-	numViews: number;
-}
+import { Post } from "../types";
 
 export const dummyPosts: Post[] = [
 	{
