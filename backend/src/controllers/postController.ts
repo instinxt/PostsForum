@@ -58,7 +58,6 @@ export const createPost = async (req: Request, res: Response) => {
 
 	try {
 		const status = await publishPost(postData);
-		console.log("Status of Q", status);
 		if (!status) {
 			res.status(500).json({ message: "Failed to queue post." });
 			return;
