@@ -5,7 +5,7 @@ import { Post } from "./types";
 const API_URL = "http://localhost:5000/api";
 
 /**
- * Creates a new post by sending a POST request to the API.
+ * Creates a new post.
  *
  * @param post - The post object to be created.
  * @returns A promise that resolves when the post is successfully created.
@@ -17,7 +17,7 @@ export const createPost = async (post: Post): Promise<void> => {
 };
 
 /**
- * Fetches posts from the API based on a search term.
+ * Fetches posts from the database based on a search term.
  *
  * @param searchTerm - The term to search for in the posts.
  * @returns A promise that resolves to an array of posts matching the search term,
@@ -38,7 +38,7 @@ export const fetchPosts = async (
 };
 
 /**
- * Retrieves the total count of posts from the API.
+ * Retrieves the total count of posts in database.
  *
  * @returns A promise that resolves to the number of posts.
  * @throws Will throw an error if the request fails.
@@ -49,7 +49,7 @@ export const getPostCount = async (): Promise<number> => {
 };
 
 /**
- * Retrieves the current size of the post queue from the API.
+ * Retrieves the current size of the message queue.
  *
  * @returns A promise that resolves to the number of items in the post queue.
  * @throws Will throw an error if the request fails.
