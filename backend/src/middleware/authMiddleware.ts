@@ -14,7 +14,7 @@ export const verifyToken = (
 	next: NextFunction
 ) => {
 	const { userId } = req.body;
-	// For system user Bypass authentication for createPost route
+	// Temporary credential to simulate authentication for create post route
 	if (userId === "hardcoded_user_id") {
 		next();
 	} else {
