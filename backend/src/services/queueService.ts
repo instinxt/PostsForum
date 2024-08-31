@@ -40,8 +40,9 @@ const connectRabbitMQ = async (): Promise<void> => {
 };
 
 /**
- * Publish post to RabbitMQ and return status
+ * Publish post to RabbitMQ
  * @param postData Post data to publish
+ * @returns Promise<boolean> Status of publish
  */
 export const publishPost = async (postData: PostData): Promise<boolean> => {
 	if (!channel) {
