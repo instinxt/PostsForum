@@ -1,0 +1,8 @@
+{
+	"$schema": "https://typedoc.org/schema.json",
+	"entryPoints": ["src/api.ts"],
+	"out": "docs",
+	"tsconfig": "tsconfig.json",
+	"includeVersion": true,
+	"exclude": ["**/node_modules/**"]
+}
