@@ -55,6 +55,6 @@ export const getPostCount = async (): Promise<number> => {
  * @throws Will throw an error if the request fails.
  */
 export const getQueueSize = async (): Promise<number> => {
-	const response = await axios.get(`${API_URL}/posts/qSize`);
+	const response = await axios.get(`${API_URL}/queue/size`);
 	return response.data.count;
 };
